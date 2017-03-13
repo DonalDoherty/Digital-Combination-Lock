@@ -1,0 +1,1392 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.CCU40_0_IRQHandler) refers to timer.o(i.TIMER_Stop) for TIMER_Stop
+    main.o(i.CCU40_0_IRQHandler) refers to main.o(i.DIGITAL_IO_ToggleOutput) for DIGITAL_IO_ToggleOutput
+    main.o(i.CCU40_0_IRQHandler) refers to main.o(i.DIGITAL_IO_GetInput) for DIGITAL_IO_GetInput
+    main.o(i.CCU40_0_IRQHandler) refers to timer.o(i.TIMER_ClearEvent) for TIMER_ClearEvent
+    main.o(i.CCU40_0_IRQHandler) refers to timer.o(i.TIMER_Clear) for TIMER_Clear
+    main.o(i.CCU40_0_IRQHandler) refers to timer_conf.o(.data) for ERROR_TIMER
+    main.o(i.CCU40_0_IRQHandler) refers to digital_io_conf.o(.constdata) for ERROR
+    main.o(i.CCU40_0_IRQHandler) refers to main.o(.data) for error
+    main.o(i.CCU40_1_IRQHandler) refers to timer.o(i.TIMER_Stop) for TIMER_Stop
+    main.o(i.CCU40_1_IRQHandler) refers to timer.o(i.TIMER_ClearEvent) for TIMER_ClearEvent
+    main.o(i.CCU40_1_IRQHandler) refers to timer.o(i.TIMER_Clear) for TIMER_Clear
+    main.o(i.CCU40_1_IRQHandler) refers to main.o(.data) for cooldowncounter
+    main.o(i.CCU40_1_IRQHandler) refers to timer_conf.o(.data) for COOLDOWN
+    main.o(i.CCU40_2_IRQHandler) refers to timer.o(i.TIMER_ClearEvent) for TIMER_ClearEvent
+    main.o(i.CCU40_2_IRQHandler) refers to main.o(i.clear) for clear
+    main.o(i.CCU40_2_IRQHandler) refers to timer_conf.o(.data) for INPUT
+    main.o(i.CCU40_3_IRQHandler) refers to timer.o(i.TIMER_ClearEvent) for TIMER_ClearEvent
+    main.o(i.CCU40_3_IRQHandler) refers to timer.o(i.TIMER_Clear) for TIMER_Clear
+    main.o(i.CCU40_3_IRQHandler) refers to timer_conf.o(.data) for DEBOUNCE
+    main.o(i.buttonPress) refers to timer.o(i.TIMER_Start) for TIMER_Start
+    main.o(i.buttonPress) refers to main.o(i.debounce) for debounce
+    main.o(i.buttonPress) refers to main.o(i.DIGITAL_IO_SetOutputHigh) for DIGITAL_IO_SetOutputHigh
+    main.o(i.buttonPress) refers to main.o(i.DIGITAL_IO_SetOutputLow) for DIGITAL_IO_SetOutputLow
+    main.o(i.buttonPress) refers to timer_conf.o(.data) for INPUT
+    main.o(i.buttonPress) refers to main.o(.data) for button1
+    main.o(i.buttonPress) refers to digital_io_conf.o(.constdata) for DIGITAL_IO_0
+    main.o(i.buttonPress) refers to main.o(.bss) for input
+    main.o(i.check) refers to main.o(i.DIGITAL_IO_ToggleOutput) for DIGITAL_IO_ToggleOutput
+    main.o(i.check) refers to main.o(i.DIGITAL_IO_GetInput) for DIGITAL_IO_GetInput
+    main.o(i.check) refers to timer.o(i.TIMER_Start) for TIMER_Start
+    main.o(i.check) refers to main.o(i.clear) for clear
+    main.o(i.check) refers to main.o(.data) for resetflag
+    main.o(i.check) refers to main.o(.bss) for input
+    main.o(i.check) refers to digital_io_conf.o(.constdata) for LOCK
+    main.o(i.check) refers to timer_conf.o(.data) for COOLDOWN
+    main.o(i.clear) refers to timer.o(i.TIMER_Stop) for TIMER_Stop
+    main.o(i.clear) refers to timer.o(i.TIMER_Clear) for TIMER_Clear
+    main.o(i.clear) refers to timer_conf.o(.data) for INPUT
+    main.o(i.clear) refers to main.o(.data) for inputcounter
+    main.o(i.clear) refers to main.o(.bss) for input
+    main.o(i.cooldown) refers to timer.o(i.TIMER_ClearEvent) for TIMER_ClearEvent
+    main.o(i.cooldown) refers to timer.o(i.TIMER_Clear) for TIMER_Clear
+    main.o(i.cooldown) refers to timer.o(i.TIMER_Start) for TIMER_Start
+    main.o(i.cooldown) refers to timer.o(i.TIMER_GetInterruptStatus) for TIMER_GetInterruptStatus
+    main.o(i.cooldown) refers to main.o(i.DIGITAL_IO_SetOutputLow) for DIGITAL_IO_SetOutputLow
+    main.o(i.cooldown) refers to main.o(i.DIGITAL_IO_GetInput) for DIGITAL_IO_GetInput
+    main.o(i.cooldown) refers to timer.o(i.TIMER_Stop) for TIMER_Stop
+    main.o(i.cooldown) refers to main.o(.data) for cooldowncounter
+    main.o(i.cooldown) refers to timer_conf.o(.data) for COOLDOWN
+    main.o(i.cooldown) refers to digital_io_conf.o(.constdata) for ERROR
+    main.o(i.debounce) refers to timer.o(i.TIMER_Start) for TIMER_Start
+    main.o(i.debounce) refers to timer.o(i.TIMER_GetInterruptStatus) for TIMER_GetInterruptStatus
+    main.o(i.debounce) refers to timer_conf.o(.data) for DEBOUNCE
+    main.o(i.main) refers to dave.o(i.DAVE_Init) for DAVE_Init
+    main.o(i.main) refers to main.o(i.buttonPress) for buttonPress
+    main.o(i.main) refers to main.o(i.reset) for reset
+    main.o(i.main) refers to main.o(i.check) for check
+    main.o(i.main) refers to main.o(i.cooldown) for cooldown
+    main.o(i.main) refers to main.o(.data) for button1
+    main.o(i.reset) refers to main.o(i.debounce) for debounce
+    main.o(i.reset) refers to main.o(i.clear) for clear
+    main.o(i.reset) refers to main.o(i.DIGITAL_IO_SetOutputHigh) for DIGITAL_IO_SetOutputHigh
+    main.o(i.reset) refers to main.o(i.DIGITAL_IO_SetOutputLow) for DIGITAL_IO_SetOutputLow
+    main.o(i.reset) refers to digital_io_conf.o(.constdata) for RESET
+    main.o(i.reset) refers to main.o(.data) for resetflag
+    clock_xmc1.o(i.CLOCK_XMC1_SetMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_SetMCLKFrequency) for XMC_SCU_CLOCK_SetMCLKFrequency
+    clock_xmc1_conf.o(i.SystemCoreClockSetup) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_Init) for XMC_SCU_CLOCK_Init
+    clock_xmc1_conf.o(i.SystemCoreClockSetup) refers to clock_xmc1_conf.o(.constdata) for .constdata
+    dave.o(i.DAVE_Init) refers to clock_xmc1.o(i.CLOCK_XMC1_Init) for CLOCK_XMC1_Init
+    dave.o(i.DAVE_Init) refers to digital_io.o(i.DIGITAL_IO_Init) for DIGITAL_IO_Init
+    dave.o(i.DAVE_Init) refers to timer.o(i.TIMER_Init) for TIMER_Init
+    dave.o(i.DAVE_Init) refers to interrupt.o(i.INTERRUPT_Init) for INTERRUPT_Init
+    dave.o(i.DAVE_Init) refers to clock_xmc1_conf.o(.data) for CLOCK_XMC1_0
+    dave.o(i.DAVE_Init) refers to digital_io_conf.o(.constdata) for DIGITAL_IO_0
+    dave.o(i.DAVE_Init) refers to timer_conf.o(.data) for DEBOUNCE
+    dave.o(i.DAVE_Init) refers to interrupt_conf.o(.constdata) for DEBOUNCE_INTERRUPT
+    digital_io.o(i.DIGITAL_IO_Init) refers to xmc1_gpio.o(i.XMC_GPIO_Init) for XMC_GPIO_Init
+    digital_io.o(i.DIGITAL_IO_Init) refers to xmc_gpio.o(i.XMC_GPIO_SetHardwareControl) for XMC_GPIO_SetHardwareControl
+    global_ccu4.o(i.GLOBAL_CCU4_Init) refers to xmc_ccu4.o(i.XMC_CCU4_Init) for XMC_CCU4_Init
+    interrupt.o(i.INTERRUPT_Init) refers to interrupt.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
+    timer.o(i.TIMER_CCU4_lInit) refers to global_ccu4.o(i.GLOBAL_CCU4_Init) for GLOBAL_CCU4_Init
+    timer.o(i.TIMER_CCU4_lInit) refers to xmc_ccu4.o(i.XMC_CCU4_SLICE_CompareInit) for XMC_CCU4_SLICE_CompareInit
+    timer.o(i.TIMER_CCU4_lInit) refers to timer.o(i.TIMER_CCU4_lShadowTransfer) for TIMER_CCU4_lShadowTransfer
+    timer.o(i.TIMER_CCU4_lInit) refers to xmc_ccu4.o(i.XMC_CCU4_SLICE_SetInterruptNode) for XMC_CCU4_SLICE_SetInterruptNode
+    timer.o(i.TIMER_CCU4_lInit) refers to timer.o(i.XMC_CCU4_SLICE_ClearTimer) for XMC_CCU4_SLICE_ClearTimer
+    timer.o(i.TIMER_CCU4_lInit) refers to timer.o(i.XMC_CCU4_SLICE_StartTimer) for XMC_CCU4_SLICE_StartTimer
+    timer.o(i.TIMER_Clear) refers to timer.o(i.XMC_CCU4_SLICE_ClearTimer) for XMC_CCU4_SLICE_ClearTimer
+    timer.o(i.TIMER_GetTime) refers to llmul.o(.text) for __aeabi_lmul
+    timer.o(i.TIMER_GetTime) refers to llushr.o(.text) for __aeabi_llsr
+    timer.o(i.TIMER_Init) refers to timer.o(i.TIMER_CCU4_lInit) for TIMER_CCU4_lInit
+    timer.o(i.TIMER_SetTimeInterval) refers to timer.o(i.TIMER_GetTimerStatus) for TIMER_GetTimerStatus
+    timer.o(i.TIMER_SetTimeInterval) refers to timer.o(i.__ARM_common_ll_muluu) for __ARM_common_ll_muluu
+    timer.o(i.TIMER_SetTimeInterval) refers to llushr.o(.text) for __aeabi_llsr
+    timer.o(i.TIMER_SetTimeInterval) refers to lludiv.o(.text) for __aeabi_uldivmod
+    timer.o(i.TIMER_SetTimeInterval) refers to xmc_ccu4.o(i.XMC_CCU4_SLICE_SetPrescaler) for XMC_CCU4_SLICE_SetPrescaler
+    timer.o(i.TIMER_SetTimeInterval) refers to timer.o(i.TIMER_CCU4_lShadowTransfer) for TIMER_CCU4_lShadowTransfer
+    timer.o(i.TIMER_Start) refers to timer.o(i.XMC_CCU4_SLICE_StartTimer) for XMC_CCU4_SLICE_StartTimer
+    timer.o(i.TIMER_Stop) refers to timer.o(i.TIMER_GetTimerStatus) for TIMER_GetTimerStatus
+    timer_conf.o(.data) refers to global_ccu4_conf.o(.data) for GLOBAL_CCU4_0
+    xmc1_flash.o(i.XMC_FLASH_ErasePages) refers to xmc1_flash.o(i.XMC_FLASH_IsBusy) for XMC_FLASH_IsBusy
+    xmc1_flash.o(i.XMC_FLASH_EraseSector) refers to xmc1_flash.o(i.XMC_FLASH_ErasePages) for XMC_FLASH_ErasePages
+    xmc1_flash.o(i.XMC_FLASH_IsBusy) refers to xmc1_flash.o(i.XMC_FLASH_GetStatus) for XMC_FLASH_GetStatus
+    xmc1_flash.o(i.XMC_FLASH_ProgramPage) refers to xmc1_flash.o(i.XMC_FLASH_ProgramVerifyPage) for XMC_FLASH_ProgramVerifyPage
+    xmc1_flash.o(i.XMC_FLASH_VerifyBlocks) refers to xmc1_flash.o(i.XMC_FLASH_IsBusy) for XMC_FLASH_IsBusy
+    xmc1_flash.o(i.XMC_FLASH_WriteBlocks) refers to xmc1_flash.o(i.XMC_FLASH_IsBusy) for XMC_FLASH_IsBusy
+    xmc1_rtc.o(i.XMC_RTC_Disable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) for XMC_SCU_CLOCK_GatePeripheralClock
+    xmc1_rtc.o(i.XMC_RTC_Enable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) for XMC_SCU_CLOCK_UngatePeripheralClock
+    xmc1_rtc.o(i.XMC_RTC_Init) refers to xmc1_rtc.o(i.XMC_RTC_IsEnabled) for XMC_RTC_IsEnabled
+    xmc1_rtc.o(i.XMC_RTC_Init) refers to xmc1_rtc.o(i.XMC_RTC_Enable) for XMC_RTC_Enable
+    xmc1_rtc.o(i.XMC_RTC_Init) refers to xmc_rtc.o(i.XMC_RTC_SetPrescaler) for XMC_RTC_SetPrescaler
+    xmc1_rtc.o(i.XMC_RTC_IsEnabled) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_IsPeripheralClockGated) for XMC_SCU_CLOCK_IsPeripheralClockGated
+    xmc1_scu.o(i.XMC_SCU_CLOCK_CalibrateOscillatorOnTemperature) refers to aeabi_sdiv.o(.text) for __aeabi_idivmod
+    xmc1_scu.o(i.XMC_SCU_CLOCK_CalibrateOscillatorOnTemperature) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_CalibrateOscillatorOnTemperature) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_GetFastPeripheralClockFrequency) refers to system_xmc1100.o(.ARM.__AT_0x20003FFC) for SystemCoreClock
+    xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) refers to system_xmc1100.o(.ARM.__AT_0x20003FFC) for SystemCoreClock
+    xmc1_scu.o(i.XMC_SCU_CLOCK_Init) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_Init) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_Init) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) for XMC_SCU_CLOCK_ScaleMCLKFrequency
+    xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyDownScaling) for XMC_SCU_CLOCK_lFrequencyDownScaling
+    xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyUpScaling) for XMC_SCU_CLOCK_lFrequencyUpScaling
+    xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) refers to system_xmc1100.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetFastPeripheralClockSource) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetFastPeripheralClockSource) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetMCLKFrequency) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetMCLKFrequency) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency) for XMC_SCU_CLOCK_ScaleMCLKFrequency
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetRtcClockSource) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_SetRtcClockSource) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) refers to xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits) for XMC_SCU_UnlockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) refers to xmc1_scu.o(i.XMC_SCU_LockProtectedBits) for XMC_SCU_LockProtectedBits
+    xmc1_scu.o(i.XMC_SCU_INTERRUPT_SetEventHandler) refers to xmc1_scu.o(.bss) for event_handler_list
+    xmc1_scu.o(i.XMC_SCU_IRQHandler) refers to xmc1_scu.o(i.XMC_SCU_INTERUPT_GetEventStatus) for XMC_SCU_INTERUPT_GetEventStatus
+    xmc1_scu.o(i.XMC_SCU_IRQHandler) refers to xmc1_scu.o(i.XMC_SCU_INTERRUPT_ClearEventStatus) for XMC_SCU_INTERRUPT_ClearEventStatus
+    xmc1_scu.o(i.XMC_SCU_IRQHandler) refers to xmc1_scu.o(.data) for event_masks
+    xmc1_scu.o(i.XMC_SCU_IRQHandler) refers to xmc1_scu.o(.bss) for event_handler_list
+    xmc1_scu.o(i.XMC_SCU_SetTempHighLimit) refers to xmc1_scu.o(i.XMC_SCU_CalcTSEVAR) for XMC_SCU_CalcTSEVAR
+    xmc1_scu.o(i.XMC_SCU_SetTempLowLimit) refers to xmc1_scu.o(i.XMC_SCU_CalcTSEVAR) for XMC_SCU_CalcTSEVAR
+    xmc_ccu4.o(i.XMC_CCU4_DisableModule) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) for XMC_SCU_CLOCK_GatePeripheralClock
+    xmc_ccu4.o(i.XMC_CCU4_EnableModule) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) for XMC_SCU_CLOCK_UngatePeripheralClock
+    xmc_ccu4.o(i.XMC_CCU4_Init) refers to xmc_ccu4.o(i.XMC_CCU4_EnableModule) for XMC_CCU4_EnableModule
+    xmc_ccu4.o(i.XMC_CCU4_SLICE_SetInterruptNode) refers to xmc_ccu4.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    xmc_common.o(i.XMC_LIST_Add) refers to xmc_common.o(i.XMC_LIST_GetTail) for XMC_LIST_GetTail
+    xmc_eru.o(i.XMC_ERU_ETL_Init) refers to xmc1_eru.o(i.XMC_ERU_Enable) for XMC_ERU_Enable
+    xmc_eru.o(i.XMC_ERU_OGU_Init) refers to xmc1_eru.o(i.XMC_ERU_Enable) for XMC_ERU_Enable
+    xmc_i2c.o(i.XMC_I2C_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_Enable) for XMC_USIC_CH_Enable
+    xmc_i2c.o(i.XMC_I2C_CH_Init) refers to xmc_i2c.o(i.XMC_I2C_CH_SetSlaveAddress) for XMC_I2C_CH_SetSlaveAddress
+    xmc_i2c.o(i.XMC_I2C_CH_Init) refers to xmc_i2c.o(i.XMC_I2C_CH_SetBaudrate) for XMC_I2C_CH_SetBaudrate
+    xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveAck) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveAck) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveNack) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveNack) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_MasterRepeatedStart) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterRepeatedStart) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_MasterStart) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterStart) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_MasterStop) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterStop) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_MasterTransmit) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_MasterTransmit) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_SetBaudrate) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_i2c.o(i.XMC_I2C_CH_SlaveTransmit) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2c.o(i.XMC_I2C_CH_SlaveTransmit) refers to xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag) for XMC_I2C_CH_ClearStatusFlag
+    xmc_i2c.o(i.XMC_I2C_CH_Stop) refers to xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2s.o(i.XMC_I2S_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_Enable) for XMC_USIC_CH_Enable
+    xmc_i2s.o(i.XMC_I2S_CH_Init) refers to xmc_i2s.o(i.XMC_I2S_CH_SetBaudrate) for XMC_I2S_CH_SetBaudrate
+    xmc_i2s.o(i.XMC_I2S_CH_Init) refers to xmc_i2s.o(i.XMC_I2S_CH_SetSystemWordLength) for XMC_I2S_CH_SetSystemWordLength
+    xmc_i2s.o(i.XMC_I2S_CH_SetBaudrate) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) for XMC_SCU_CLOCK_GetPeripheralClockFrequency
+    xmc_i2s.o(i.XMC_I2S_CH_SetBaudrate) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_i2s.o(i.XMC_I2S_CH_Stop) refers to xmc_i2s.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_i2s.o(i.XMC_I2S_CH_Transmit) refers to xmc_i2s.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_prng.o(i.XMC_PRNG_Init) refers to xmc_prng.o(i.XMC_PRNG_SetRandomDataBlockSize) for XMC_PRNG_SetRandomDataBlockSize
+    xmc_rtc.o(i.XMC_RTC_SetAlarm) refers to xmc_rtc.o(i.XMC_SCU_GetMirrorStatus) for XMC_SCU_GetMirrorStatus
+    xmc_rtc.o(i.XMC_RTC_SetAlarmStdFormat) refers to xmc_rtc.o(i.XMC_RTC_SetAlarm) for XMC_RTC_SetAlarm
+    xmc_rtc.o(i.XMC_RTC_SetPrescaler) refers to xmc_rtc.o(i.XMC_SCU_GetMirrorStatus) for XMC_SCU_GetMirrorStatus
+    xmc_rtc.o(i.XMC_RTC_SetTime) refers to xmc_rtc.o(i.XMC_SCU_GetMirrorStatus) for XMC_SCU_GetMirrorStatus
+    xmc_rtc.o(i.XMC_RTC_SetTimeStdFormat) refers to xmc_rtc.o(i.XMC_RTC_SetTime) for XMC_RTC_SetTime
+    xmc_rtc.o(i.XMC_RTC_Start) refers to xmc_rtc.o(i.XMC_SCU_GetMirrorStatus) for XMC_SCU_GetMirrorStatus
+    xmc_rtc.o(i.XMC_RTC_Stop) refers to xmc_rtc.o(i.XMC_SCU_GetMirrorStatus) for XMC_SCU_GetMirrorStatus
+    xmc_spi.o(i.XMC_SPI_CH_DisableSlaveSelect) refers to xmc_spi.o(i.XMC_SPI_CH_ClearStatusFlag) for XMC_SPI_CH_ClearStatusFlag
+    xmc_spi.o(i.XMC_SPI_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_Enable) for XMC_USIC_CH_Enable
+    xmc_spi.o(i.XMC_SPI_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_spi.o(i.XMC_SPI_CH_SetBaudrate) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) for XMC_SCU_CLOCK_GetPeripheralClockFrequency
+    xmc_spi.o(i.XMC_SPI_CH_SetBaudrate) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_spi.o(i.XMC_SPI_CH_SetInterwordDelay) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) for XMC_SCU_CLOCK_GetPeripheralClockFrequency
+    xmc_spi.o(i.XMC_SPI_CH_SetInterwordDelay) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    xmc_spi.o(i.XMC_SPI_CH_Stop) refers to xmc_spi.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_spi.o(i.XMC_SPI_CH_Transmit) refers to xmc_spi.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_spi.o(i.XMC_SPI_CH_Transmit) refers to xmc_spi.o(i.XMC_SPI_CH_ClearStatusFlag) for XMC_SPI_CH_ClearStatusFlag
+    xmc_uart.o(i.XMC_UART_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_Enable) for XMC_USIC_CH_Enable
+    xmc_uart.o(i.XMC_UART_CH_Init) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_uart.o(i.XMC_UART_CH_SetBaudrate) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) for XMC_SCU_CLOCK_GetPeripheralClockFrequency
+    xmc_uart.o(i.XMC_UART_CH_SetBaudrate) refers to xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) for XMC_USIC_CH_SetBaudrate
+    xmc_uart.o(i.XMC_UART_CH_Stop) refers to xmc_uart.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_uart.o(i.XMC_UART_CH_Transmit) refers to xmc_uart.o(i.XMC_USIC_CH_GetTransmitBufferStatus) for XMC_USIC_CH_GetTransmitBufferStatus
+    xmc_usic.o(i.XMC_USIC_CH_Enable) refers to xmc_usic.o(i.XMC_USIC_Enable) for XMC_USIC_Enable
+    xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency) for XMC_SCU_CLOCK_GetPeripheralClockFrequency
+    xmc_usic.o(i.XMC_USIC_CH_SetBaudrate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    xmc_usic.o(i.XMC_USIC_Disable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) for XMC_SCU_CLOCK_GatePeripheralClock
+    xmc_usic.o(i.XMC_USIC_Enable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) for XMC_SCU_CLOCK_UngatePeripheralClock
+    xmc_vadc.o(i.XMC_VADC_GLOBAL_DisableModule) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) for XMC_SCU_CLOCK_GatePeripheralClock
+    xmc_vadc.o(i.XMC_VADC_GLOBAL_EnableModule) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) for XMC_SCU_CLOCK_UngatePeripheralClock
+    xmc_vadc.o(i.XMC_VADC_GLOBAL_Init) refers to xmc_vadc.o(i.XMC_VADC_GLOBAL_EnableModule) for XMC_VADC_GLOBAL_EnableModule
+    xmc_wdt.o(i.XMC_WDT_Disable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock) for XMC_SCU_CLOCK_GatePeripheralClock
+    xmc_wdt.o(i.XMC_WDT_Enable) refers to xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock) for XMC_SCU_CLOCK_UngatePeripheralClock
+    xmc_wdt.o(i.XMC_WDT_Init) refers to xmc_wdt.o(i.XMC_WDT_Enable) for XMC_WDT_Enable
+    startup_xmc1100.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_xmc1100.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_xmc1100.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_xmc1100.o(RESET) refers to startup_xmc1100.o(STACK) for __initial_sp
+    startup_xmc1100.o(RESET) refers to startup_xmc1100.o(.text) for Reset_Handler
+    startup_xmc1100.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_xmc1100.o(.text) refers to system_xmc1100.o(i.SystemInit) for SystemInit
+    startup_xmc1100.o(.text) refers to __main.o(!!!main) for __main
+    startup_xmc1100.o(.text) refers to startup_xmc1100.o(HEAP) for Heap_Mem
+    startup_xmc1100.o(.text) refers to startup_xmc1100.o(STACK) for Stack_Mem
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers to startup_xmc1100.o(.text) for HardFault_Handler
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers to main.o(i.CCU40_0_IRQHandler) for CCU40_0_IRQHandler
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers to main.o(i.CCU40_1_IRQHandler) for CCU40_1_IRQHandler
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers to main.o(i.CCU40_2_IRQHandler) for CCU40_2_IRQHandler
+    startup_xmc1100.o(.ARM.__at_0x20000000) refers to main.o(i.CCU40_3_IRQHandler) for CCU40_3_IRQHandler
+    system_xmc1100.o(i.SystemCoreClockSetup) refers to system_xmc1100.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    system_xmc1100.o(i.SystemCoreClockUpdate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    system_xmc1100.o(i.SystemCoreClockUpdate) refers to system_xmc1100.o(.data) for IDIV
+    system_xmc1100.o(i.SystemCoreClockUpdate) refers to system_xmc1100.o(.ARM.__AT_0x20003FFC) for SystemCoreClock
+    system_xmc1100.o(i.SystemInit) refers to cpu_ctrl_xmc1_conf.o(i.SystemCoreSetup) for SystemCoreSetup
+    system_xmc1100.o(i.SystemInit) refers to clock_xmc1_conf.o(i.SystemCoreClockSetup) for SystemCoreClockSetup
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    aeabi_ldiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_xmc1100.o(.text) for __user_initial_stackheap
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to tempstk.o(.text) for __temporary_stack_top
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to __main.o(!!!main) for __main
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing clock_xmc1.o(.rev16_text), (4 bytes).
+    Removing clock_xmc1.o(.revsh_text), (4 bytes).
+    Removing clock_xmc1.o(i.CLOCK_XMC1_GetAppVersion), (30 bytes).
+    Removing clock_xmc1.o(i.CLOCK_XMC1_SetMCLKFrequency), (12 bytes).
+    Removing clock_xmc1_conf.o(.rev16_text), (4 bytes).
+    Removing clock_xmc1_conf.o(.revsh_text), (4 bytes).
+    Removing cpu_ctrl_xmc1.o(.rev16_text), (4 bytes).
+    Removing cpu_ctrl_xmc1.o(.revsh_text), (4 bytes).
+    Removing cpu_ctrl_xmc1.o(i.CPU_CTRL_XMC1_GetAppVersion), (30 bytes).
+    Removing cpu_ctrl_xmc1.o(i.CPU_CTRL_XMC1_Init), (6 bytes).
+    Removing cpu_ctrl_xmc1_conf.o(.rev16_text), (4 bytes).
+    Removing cpu_ctrl_xmc1_conf.o(.revsh_text), (4 bytes).
+    Removing cpu_ctrl_xmc1_conf.o(.data), (1 bytes).
+    Removing dave.o(.rev16_text), (4 bytes).
+    Removing dave.o(.revsh_text), (4 bytes).
+    Removing digital_io.o(.rev16_text), (4 bytes).
+    Removing digital_io.o(.revsh_text), (4 bytes).
+    Removing digital_io.o(i.DIGITAL_IO_GetAppVersion), (30 bytes).
+    Removing digital_io_conf.o(.rev16_text), (4 bytes).
+    Removing digital_io_conf.o(.revsh_text), (4 bytes).
+    Removing global_ccu4.o(.rev16_text), (4 bytes).
+    Removing global_ccu4.o(.revsh_text), (4 bytes).
+    Removing global_ccu4.o(i.GLOBAL_CCU4_GetAppVersion), (30 bytes).
+    Removing global_ccu4_conf.o(.rev16_text), (4 bytes).
+    Removing global_ccu4_conf.o(.revsh_text), (4 bytes).
+    Removing interrupt.o(.rev16_text), (4 bytes).
+    Removing interrupt.o(.revsh_text), (4 bytes).
+    Removing interrupt.o(i.INTERRUPT_GetAppVersion), (30 bytes).
+    Removing interrupt_conf.o(.rev16_text), (4 bytes).
+    Removing interrupt_conf.o(.revsh_text), (4 bytes).
+    Removing timer.o(.rev16_text), (4 bytes).
+    Removing timer.o(.revsh_text), (4 bytes).
+    Removing timer.o(i.TIMER_GetAppVersion), (30 bytes).
+    Removing timer.o(i.TIMER_GetTime), (84 bytes).
+    Removing timer.o(i.TIMER_SetTimeInterval), (168 bytes).
+    Removing timer_conf.o(.rev16_text), (4 bytes).
+    Removing timer_conf.o(.revsh_text), (4 bytes).
+    Removing xmc1_eru.o(.rev16_text), (4 bytes).
+    Removing xmc1_eru.o(.revsh_text), (4 bytes).
+    Removing xmc1_eru.o(i.XMC_ERU_Disable), (2 bytes).
+    Removing xmc1_eru.o(i.XMC_ERU_Enable), (2 bytes).
+    Removing xmc1_flash.o(.rev16_text), (4 bytes).
+    Removing xmc1_flash.o(.revsh_text), (4 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ClearStatus), (20 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_DisableEvent), (16 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_EnableEvent), (20 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ErasePage), (16 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ErasePages), (42 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_EraseSector), (14 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_GetStatus), (12 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_IsBusy), (12 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ProgramPage), (16 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ProgramVerifyPage), (20 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_ReadBlocks), (32 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_VerifyBlocks), (96 bytes).
+    Removing xmc1_flash.o(i.XMC_FLASH_WriteBlocks), (132 bytes).
+    Removing xmc1_gpio.o(.rev16_text), (4 bytes).
+    Removing xmc1_gpio.o(.revsh_text), (4 bytes).
+    Removing xmc1_gpio.o(i.XMC_GPIO_SetInputHysteresis), (64 bytes).
+    Removing xmc1_rtc.o(.rev16_text), (4 bytes).
+    Removing xmc1_rtc.o(.revsh_text), (4 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_ClearEvent), (12 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_Disable), (12 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_DisableEvent), (16 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_Enable), (12 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_EnableEvent), (16 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_Init), (100 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_IsEnabled), (16 bytes).
+    Removing xmc1_rtc.o(i.XMC_RTC_SetDebugMode), (24 bytes).
+    Removing xmc1_scu.o(.rev16_text), (4 bytes).
+    Removing xmc1_scu.o(.revsh_text), (4 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_CalibrateOscillatorOnTemperature), (68 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_GatePeripheralClock), (28 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_GetFastPeripheralClockFrequency), (28 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_GetPeripheralClockFrequency), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_IsPeripheralClockGated), (24 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_SetFastPeripheralClockSource), (36 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_SetMCLKFrequency), (44 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CLOCK_SetRtcClockSource), (36 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CalcTSEVAR), (52 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_CalcTemperature), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_GetTemperature), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_HighTemperature), (20 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERRUPT_ClearEventStatus), (16 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERRUPT_DisableEvent), (16 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERRUPT_EnableEvent), (16 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERRUPT_SetEventHandler), (48 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERRUPT_TriggerEvent), (16 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_INTERUPT_GetEventStatus), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_IRQHandler), (80 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_LowTemperature), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_SetRawTempLimits), (12 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_SetTempHighLimit), (36 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_SetTempLowLimit), (36 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_StartTempMeasurement), (20 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_StopTempMeasurement), (24 bytes).
+    Removing xmc1_scu.o(i.XMC_SCU_SupplyMonitorInit), (80 bytes).
+    Removing xmc1_scu.o(.bss), (128 bytes).
+    Removing xmc1_scu.o(.data), (12 bytes).
+    Removing xmc_acmp.o(.rev16_text), (4 bytes).
+    Removing xmc_acmp.o(.revsh_text), (4 bytes).
+    Removing xmc_bccu.o(.rev16_text), (4 bytes).
+    Removing xmc_bccu.o(.revsh_text), (4 bytes).
+    Removing xmc_can.o(.rev16_text), (4 bytes).
+    Removing xmc_can.o(.revsh_text), (4 bytes).
+    Removing xmc_ccu4.o(.rev16_text), (4 bytes).
+    Removing xmc_ccu4.o(.revsh_text), (4 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_DisableModule), (36 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_Capture0Config), (22 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_Capture1Config), (22 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_CaptureInit), (32 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_ConfigureEvent), (102 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_ConfigureStatusBitOverrideEvent), (128 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_CountConfig), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_DirectionConfig), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_EnableDithering), (42 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_GateConfig), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_GetCaptureRegisterValue), (12 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_GetCapturedValueFromFifo), (18 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_GetLastCapturedTimerValue), (94 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_LoadConfig), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_ModulationConfig), (68 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_SetInput), (34 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_SetPassiveLevel), (18 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_SetPrescaler), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_SetTimerCountingMode), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_SetTimerRepeatMode), (24 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_StartConfig), (46 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_StatusBitOverrideConfig), (20 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_StopConfig), (40 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SLICE_TrapConfig), (70 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SetModuleClock), (22 bytes).
+    Removing xmc_ccu4.o(i.XMC_CCU4_SetMultiChannelShadowTransferMode), (20 bytes).
+    Removing xmc_ccu8.o(.rev16_text), (4 bytes).
+    Removing xmc_ccu8.o(.revsh_text), (4 bytes).
+    Removing xmc_common.o(.rev16_text), (4 bytes).
+    Removing xmc_common.o(.revsh_text), (4 bytes).
+    Removing xmc_common.o(i.XMC_LIST_Add), (30 bytes).
+    Removing xmc_common.o(i.XMC_LIST_GetHead), (6 bytes).
+    Removing xmc_common.o(i.XMC_LIST_GetTail), (26 bytes).
+    Removing xmc_common.o(i.XMC_LIST_Init), (6 bytes).
+    Removing xmc_common.o(i.XMC_LIST_Insert), (20 bytes).
+    Removing xmc_common.o(i.XMC_LIST_Remove), (54 bytes).
+    Removing xmc_common.o(i.XMC_PRIOARRAY_Add), (110 bytes).
+    Removing xmc_common.o(i.XMC_PRIOARRAY_Init), (84 bytes).
+    Removing xmc_common.o(i.XMC_PRIOARRAY_Remove), (44 bytes).
+    Removing xmc_eru.o(.rev16_text), (4 bytes).
+    Removing xmc_eru.o(.revsh_text), (4 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_DisableOutputTrigger), (24 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_EnableOutputTrigger), (54 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_GetEdgeDetection), (16 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_Init), (46 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_SetEdgeDetection), (32 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_SetInput), (26 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_SetSource), (36 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_ETL_SetStatusFlagMode), (32 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_DisablePatternDetection), (24 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_DisablePeripheralTrigger), (24 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_EnablePatternDetection), (58 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_EnablePeripheralTrigger), (30 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_Init), (26 bytes).
+    Removing xmc_eru.o(i.XMC_ERU_OGU_SetServiceRequestMode), (32 bytes).
+    Removing xmc_gpio.o(.rev16_text), (4 bytes).
+    Removing xmc_gpio.o(.revsh_text), (4 bytes).
+    Removing xmc_gpio.o(i.XMC_GPIO_SetMode), (64 bytes).
+    Removing xmc_i2c.o(.rev16_text), (4 bytes).
+    Removing xmc_i2c.o(.revsh_text), (4 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_ClearStatusFlag), (8 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_DisableEvent), (28 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_EnableEvent), (28 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_GetReceivedData), (34 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_GetSlaveAddress), (36 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_Init), (56 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveAck), (64 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterReceiveNack), (62 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterRepeatedStart), (76 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterStart), (76 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterStop), (62 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_MasterTransmit), (58 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_SetBaudrate), (88 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_SetSlaveAddress), (38 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_SlaveTransmit), (70 bytes).
+    Removing xmc_i2c.o(i.XMC_I2C_CH_Stop), (44 bytes).
+    Removing xmc_i2c.o(i.XMC_USIC_CH_GetTransmitBufferStatus), (10 bytes).
+    Removing xmc_i2s.o(.rev16_text), (4 bytes).
+    Removing xmc_i2s.o(.revsh_text), (4 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_DisableEvent), (32 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_EnableEvent), (32 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_GetReceivedData), (34 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_Init), (110 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_SetBaudrate), (52 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_SetSystemWordLength), (116 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_Stop), (44 bytes).
+    Removing xmc_i2s.o(i.XMC_I2S_CH_Transmit), (70 bytes).
+    Removing xmc_i2s.o(i.XMC_USIC_CH_GetTransmitBufferStatus), (10 bytes).
+    Removing xmc_ledts.o(.rev16_text), (4 bytes).
+    Removing xmc_ledts.o(.revsh_text), (4 bytes).
+    Removing xmc_math.o(.rev16_text), (4 bytes).
+    Removing xmc_math.o(.revsh_text), (4 bytes).
+    Removing xmc_pau.o(.rev16_text), (4 bytes).
+    Removing xmc_pau.o(.revsh_text), (4 bytes).
+    Removing xmc_pau.o(i.XMC_PAU_DisablePeripheralAccess), (28 bytes).
+    Removing xmc_pau.o(i.XMC_PAU_EnablePeripheralAccess), (28 bytes).
+    Removing xmc_pau.o(i.XMC_PAU_IsPeripheralAccessEnabled), (32 bytes).
+    Removing xmc_pau.o(i.XMC_PAU_IsPeripheralAvailable), (32 bytes).
+    Removing xmc_posif.o(.rev16_text), (4 bytes).
+    Removing xmc_posif.o(.revsh_text), (4 bytes).
+    Removing xmc_prng.o(.rev16_text), (4 bytes).
+    Removing xmc_prng.o(.revsh_text), (4 bytes).
+    Removing xmc_prng.o(i.XMC_PRNG_Init), (144 bytes).
+    Removing xmc_prng.o(i.XMC_PRNG_SetRandomDataBlockSize), (24 bytes).
+    Removing xmc_rtc.o(.rev16_text), (4 bytes).
+    Removing xmc_rtc.o(.revsh_text), (4 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_GetAlarm), (20 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_GetAlarmStdFormat), (76 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_GetEventStatus), (12 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_GetTime), (20 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_GetTimeStdFormat), (84 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_SetAlarm), (36 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_SetAlarmStdFormat), (140 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_SetPrescaler), (40 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_SetTime), (36 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_SetTimeStdFormat), (156 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_Start), (36 bytes).
+    Removing xmc_rtc.o(i.XMC_RTC_Stop), (36 bytes).
+    Removing xmc_rtc.o(i.XMC_SCU_GetMirrorStatus), (12 bytes).
+    Removing xmc_spi.o(.rev16_text), (4 bytes).
+    Removing xmc_spi.o(.revsh_text), (4 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_ClearStatusFlag), (8 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_DisableEvent), (30 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_DisableSlaveSelect), (24 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_EnableEvent), (30 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_EnableSlaveSelect), (18 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_GetReceivedData), (34 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_Init), (68 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_SetBaudrate), (38 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_SetInterwordDelay), (236 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_Stop), (44 bytes).
+    Removing xmc_spi.o(i.XMC_SPI_CH_Transmit), (84 bytes).
+    Removing xmc_spi.o(i.XMC_USIC_CH_GetTransmitBufferStatus), (10 bytes).
+    Removing xmc_uart.o(.rev16_text), (4 bytes).
+    Removing xmc_uart.o(.revsh_text), (4 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_DisableEvent), (24 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_EnableEvent), (24 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_GetReceivedData), (34 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_Init), (118 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_SetBaudrate), (44 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_Stop), (56 bytes).
+    Removing xmc_uart.o(i.XMC_UART_CH_Transmit), (56 bytes).
+    Removing xmc_uart.o(i.XMC_USIC_CH_GetTransmitBufferStatus), (10 bytes).
+    Removing xmc_usic.o(.rev16_text), (4 bytes).
+    Removing xmc_usic.o(.revsh_text), (4 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_ConfigExternalInputSignalToBRG), (76 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_Disable), (14 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_Enable), (60 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_RXFIFO_Configure), (60 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_RXFIFO_SetInterruptNodePointer), (28 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_RXFIFO_SetSizeTriggerLimit), (46 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_SetBaudrate), (180 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_SetInterruptNodePointer), (20 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_TXFIFO_Configure), (52 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_TXFIFO_SetInterruptNodePointer), (28 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_CH_TXFIFO_SetSizeTriggerLimit), (46 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_Disable), (24 bytes).
+    Removing xmc_usic.o(i.XMC_USIC_Enable), (24 bytes).
+    Removing xmc_vadc.o(.rev16_text), (4 bytes).
+    Removing xmc_vadc.o(.revsh_text), (4 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundAbortSequence), (48 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundGetNumChannelsPending), (64 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundInit), (32 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundSelectGating), (36 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundSelectTrigger), (36 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundSelectTriggerEdge), (36 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_BackgroundSetReqSrcEventInterruptNode), (40 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_DisableModule), (10 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_EnableModule), (10 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_GetCompareResult), (28 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_Init), (76 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_InputClassInit), (24 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_SHS_Init), (12 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_SHS_SetGainFactor), (86 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_SHS_SetSigmaDeltaLoop), (32 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_SetCompareValue), (42 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_SetResultEventInterruptNode), (46 bytes).
+    Removing xmc_vadc.o(i.XMC_VADC_GLOBAL_StartupCalibration), (32 bytes).
+    Removing xmc_wdt.o(.rev16_text), (4 bytes).
+    Removing xmc_wdt.o(.revsh_text), (4 bytes).
+    Removing xmc_wdt.o(i.XMC_WDT_Disable), (12 bytes).
+    Removing xmc_wdt.o(i.XMC_WDT_Enable), (12 bytes).
+    Removing xmc_wdt.o(i.XMC_WDT_Init), (28 bytes).
+    Removing system_xmc1100.o(.rev16_text), (4 bytes).
+    Removing system_xmc1100.o(.revsh_text), (4 bytes).
+    Removing system_xmc1100.o(i.SystemCoreClockSetup), (56 bytes).
+    Removing system_xmc1100.o(i.SystemCoreSetup), (36 bytes).
+    Removing timer.o(i.__ARM_common_ll_muluu), (48 bytes).
+
+297 unused section(s) (total 9217 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0.o ABSOLUTE
+    ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/division.c                       0x00000000   Number         0  lludiv.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/longlong.c                       0x00000000   Number         0  llmul.o ABSOLUTE
+    ../clib/longlong.c                       0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc1_eru.c 0x00000000   Number         0  xmc1_eru.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc1_flash.c 0x00000000   Number         0  xmc1_flash.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc1_gpio.c 0x00000000   Number         0  xmc1_gpio.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc1_rtc.c 0x00000000   Number         0  xmc1_rtc.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc1_scu.c 0x00000000   Number         0  xmc1_scu.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_acmp.c 0x00000000   Number         0  xmc_acmp.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_bccu.c 0x00000000   Number         0  xmc_bccu.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_can.c 0x00000000   Number         0  xmc_can.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_ccu4.c 0x00000000   Number         0  xmc_ccu4.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_ccu8.c 0x00000000   Number         0  xmc_ccu8.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_common.c 0x00000000   Number         0  xmc_common.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_eru.c 0x00000000   Number         0  xmc_eru.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_gpio.c 0x00000000   Number         0  xmc_gpio.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_i2c.c 0x00000000   Number         0  xmc_i2c.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_i2s.c 0x00000000   Number         0  xmc_i2s.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_ledts.c 0x00000000   Number         0  xmc_ledts.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_math.c 0x00000000   Number         0  xmc_math.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_pau.c 0x00000000   Number         0  xmc_pau.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_posif.c 0x00000000   Number         0  xmc_posif.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_prng.c 0x00000000   Number         0  xmc_prng.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_rtc.c 0x00000000   Number         0  xmc_rtc.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_spi.c 0x00000000   Number         0  xmc_spi.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_uart.c 0x00000000   Number         0  xmc_uart.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_usic.c 0x00000000   Number         0  xmc_usic.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_vadc.c 0x00000000   Number         0  xmc_vadc.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Infineon\XMC1000_DFP\2.5.1\Device\XMClib\src\xmc_wdt.c 0x00000000   Number         0  xmc_wdt.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\CLOCK_XMC1\clock_xmc1.c 0x00000000   Number         0  clock_xmc1.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\CLOCK_XMC1\clock_xmc1_conf.c 0x00000000   Number         0  clock_xmc1_conf.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\CPU_CTRL_XMC1\cpu_ctrl_xmc1.c 0x00000000   Number         0  cpu_ctrl_xmc1.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\CPU_CTRL_XMC1\cpu_ctrl_xmc1_conf.c 0x00000000   Number         0  cpu_ctrl_xmc1_conf.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\DAVE.c 0x00000000   Number         0  dave.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\DIGITAL_IO\digital_io.c 0x00000000   Number         0  digital_io.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\DIGITAL_IO\digital_io_conf.c 0x00000000   Number         0  digital_io_conf.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\GLOBAL_CCU4\global_ccu4.c 0x00000000   Number         0  global_ccu4.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\GLOBAL_CCU4\global_ccu4_conf.c 0x00000000   Number         0  global_ccu4_conf.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\INTERRUPT\interrupt.c 0x00000000   Number         0  interrupt.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\INTERRUPT\interrupt_conf.c 0x00000000   Number         0  interrupt_conf.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\TIMER\timer.c 0x00000000   Number         0  timer.o ABSOLUTE
+    C:\Workspaces\DAVE-4.3-64Bit\WS_2016_09_02\Digital_Combination_Lock_Donal_Doherty\Dave\Generated\TIMER\timer_conf.c 0x00000000   Number         0  timer_conf.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc1_eru.c 0x00000000   Number         0  xmc1_eru.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc1_flash.c 0x00000000   Number         0  xmc1_flash.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc1_gpio.c 0x00000000   Number         0  xmc1_gpio.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc1_rtc.c 0x00000000   Number         0  xmc1_rtc.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc1_scu.c 0x00000000   Number         0  xmc1_scu.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_acmp.c 0x00000000   Number         0  xmc_acmp.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_bccu.c 0x00000000   Number         0  xmc_bccu.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_can.c 0x00000000   Number         0  xmc_can.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_ccu4.c 0x00000000   Number         0  xmc_ccu4.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_ccu8.c 0x00000000   Number         0  xmc_ccu8.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_common.c 0x00000000   Number         0  xmc_common.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_eru.c 0x00000000   Number         0  xmc_eru.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_gpio.c 0x00000000   Number         0  xmc_gpio.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_i2c.c 0x00000000   Number         0  xmc_i2c.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_i2s.c 0x00000000   Number         0  xmc_i2s.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_ledts.c 0x00000000   Number         0  xmc_ledts.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_math.c 0x00000000   Number         0  xmc_math.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_pau.c 0x00000000   Number         0  xmc_pau.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_posif.c 0x00000000   Number         0  xmc_posif.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_prng.c 0x00000000   Number         0  xmc_prng.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_rtc.c 0x00000000   Number         0  xmc_rtc.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_spi.c 0x00000000   Number         0  xmc_spi.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_uart.c 0x00000000   Number         0  xmc_uart.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_usic.c 0x00000000   Number         0  xmc_usic.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_vadc.c 0x00000000   Number         0  xmc_vadc.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Infineon\\XMC1000_DFP\\2.5.1\\Device\\XMClib\\src\\xmc_wdt.c 0x00000000   Number         0  xmc_wdt.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\CLOCK_XMC1\\clock_xmc1.c 0x00000000   Number         0  clock_xmc1.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\CLOCK_XMC1\\clock_xmc1_conf.c 0x00000000   Number         0  clock_xmc1_conf.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\CPU_CTRL_XMC1\\cpu_ctrl_xmc1.c 0x00000000   Number         0  cpu_ctrl_xmc1.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\CPU_CTRL_XMC1\\cpu_ctrl_xmc1_conf.c 0x00000000   Number         0  cpu_ctrl_xmc1_conf.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\DAVE.c 0x00000000   Number         0  dave.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\DIGITAL_IO\\digital_io.c 0x00000000   Number         0  digital_io.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\DIGITAL_IO\\digital_io_conf.c 0x00000000   Number         0  digital_io_conf.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\GLOBAL_CCU4\\global_ccu4.c 0x00000000   Number         0  global_ccu4.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\GLOBAL_CCU4\\global_ccu4_conf.c 0x00000000   Number         0  global_ccu4_conf.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\INTERRUPT\\interrupt.c 0x00000000   Number         0  interrupt.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\INTERRUPT\\interrupt_conf.c 0x00000000   Number         0  interrupt_conf.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\TIMER\\timer.c 0x00000000   Number         0  timer.o ABSOLUTE
+    C:\\Workspaces\\DAVE-4.3-64Bit\\WS_2016_09_02\\Digital_Combination_Lock_Donal_Doherty\\Dave\\Generated\\TIMER\\timer_conf.c 0x00000000   Number         0  timer_conf.o ABSOLUTE
+    RTE\Device\XMC1100-Q024x0064\system_XMC1100.c 0x00000000   Number         0  system_xmc1100.o ABSOLUTE
+    RTE\\Device\\XMC1100-Q024x0064\\startup_XMC1100.s 0x00000000   Number         0  startup_xmc1100.o ABSOLUTE
+    RTE\\Device\\XMC1100-Q024x0064\\system_XMC1100.c 0x00000000   Number         0  system_xmc1100.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    RESET                                    0x10001000   Section       24  startup_xmc1100.o(RESET)
+    !!!main                                  0x10001018   Section        8  __main.o(!!!main)
+    !!!scatter                               0x10001020   Section       60  __scatter.o(!!!scatter)
+    !!handler_copy                           0x1000105c   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x10001078   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x10001094   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x10001096   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x10001096   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$libshutdown$$00000000      0x10001098   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x1000109a   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x1000109a   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x1000109c   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x1000109c   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x1000109c   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x100010a2   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x100010a2   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x100010a6   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x100010a6   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x100010ae   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x100010b0   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x100010b0   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x100010b4   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x100010bc   Section       68  startup_xmc1100.o(.text)
+    .text                                    0x10001100   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x1000125a   Section        0  heapauxi.o(.text)
+    .text                                    0x10001260   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x1000129e   Section        0  exit.o(.text)
+    .text                                    0x100012b0   Section        8  libspace.o(.text)
+    .text                                    0x100012b8   Section        0  sys_exit.o(.text)
+    .text                                    0x100012c4   Section        2  use_no_semi.o(.text)
+    .text                                    0x100012c6   Section        0  indicate_semi.o(.text)
+    i.CCU40_0_IRQHandler                     0x100012c8   Section        0  main.o(i.CCU40_0_IRQHandler)
+    i.CCU40_1_IRQHandler                     0x100012fc   Section        0  main.o(i.CCU40_1_IRQHandler)
+    i.CCU40_2_IRQHandler                     0x10001368   Section        0  main.o(i.CCU40_2_IRQHandler)
+    i.CCU40_3_IRQHandler                     0x1000137c   Section        0  main.o(i.CCU40_3_IRQHandler)
+    i.CLOCK_XMC1_Init                        0x10001390   Section        0  clock_xmc1.o(i.CLOCK_XMC1_Init)
+    i.DAVE_Init                              0x100013b8   Section        0  dave.o(i.DAVE_Init)
+    i.DIGITAL_IO_GetInput                    0x100014bc   Section        0  main.o(i.DIGITAL_IO_GetInput)
+    DIGITAL_IO_GetInput                      0x100014bd   Thumb Code    18  main.o(i.DIGITAL_IO_GetInput)
+    i.DIGITAL_IO_Init                        0x100014ce   Section        0  digital_io.o(i.DIGITAL_IO_Init)
+    i.DIGITAL_IO_SetOutputHigh               0x100014ea   Section        0  main.o(i.DIGITAL_IO_SetOutputHigh)
+    DIGITAL_IO_SetOutputHigh                 0x100014eb   Thumb Code    14  main.o(i.DIGITAL_IO_SetOutputHigh)
+    i.DIGITAL_IO_SetOutputLow                0x100014f8   Section        0  main.o(i.DIGITAL_IO_SetOutputLow)
+    DIGITAL_IO_SetOutputLow                  0x100014f9   Thumb Code    16  main.o(i.DIGITAL_IO_SetOutputLow)
+    i.DIGITAL_IO_ToggleOutput                0x10001508   Section        0  main.o(i.DIGITAL_IO_ToggleOutput)
+    DIGITAL_IO_ToggleOutput                  0x10001509   Thumb Code    14  main.o(i.DIGITAL_IO_ToggleOutput)
+    i.GLOBAL_CCU4_Init                       0x1000151c   Section        0  global_ccu4.o(i.GLOBAL_CCU4_Init)
+    i.INTERRUPT_Init                         0x10001544   Section        0  interrupt.o(i.INTERRUPT_Init)
+    i.SystemCoreClockSetup                   0x1000157c   Section        0  clock_xmc1_conf.o(i.SystemCoreClockSetup)
+    i.SystemCoreClockUpdate                  0x10001594   Section        0  system_xmc1100.o(i.SystemCoreClockUpdate)
+    i.SystemCoreSetup                        0x100015f4   Section        0  cpu_ctrl_xmc1_conf.o(i.SystemCoreSetup)
+    i.SystemInit                             0x100015f6   Section        0  system_xmc1100.o(i.SystemInit)
+    i.TIMER_CCU4_lInit                       0x10001602   Section        0  timer.o(i.TIMER_CCU4_lInit)
+    i.TIMER_CCU4_lShadowTransfer             0x10001676   Section        0  timer.o(i.TIMER_CCU4_lShadowTransfer)
+    i.TIMER_Clear                            0x10001692   Section        0  timer.o(i.TIMER_Clear)
+    i.TIMER_ClearEvent                       0x100016b6   Section        0  timer.o(i.TIMER_ClearEvent)
+    i.TIMER_GetInterruptStatus               0x100016d8   Section        0  timer.o(i.TIMER_GetInterruptStatus)
+    i.TIMER_GetTimerStatus                   0x10001704   Section        0  timer.o(i.TIMER_GetTimerStatus)
+    i.TIMER_Init                             0x10001726   Section        0  timer.o(i.TIMER_Init)
+    i.TIMER_Start                            0x10001748   Section        0  timer.o(i.TIMER_Start)
+    i.TIMER_Stop                             0x1000176c   Section        0  timer.o(i.TIMER_Stop)
+    i.XMC_CCU4_EnableModule                  0x100017a0   Section        0  xmc_ccu4.o(i.XMC_CCU4_EnableModule)
+    i.XMC_CCU4_Init                          0x100017c4   Section        0  xmc_ccu4.o(i.XMC_CCU4_Init)
+    i.XMC_CCU4_SLICE_ClearTimer              0x100017f2   Section        0  timer.o(i.XMC_CCU4_SLICE_ClearTimer)
+    XMC_CCU4_SLICE_ClearTimer                0x100017f3   Thumb Code     6  timer.o(i.XMC_CCU4_SLICE_ClearTimer)
+    i.XMC_CCU4_SLICE_CompareInit             0x100017f8   Section        0  xmc_ccu4.o(i.XMC_CCU4_SLICE_CompareInit)
+    i.XMC_CCU4_SLICE_SetInterruptNode        0x10001828   Section        0  xmc_ccu4.o(i.XMC_CCU4_SLICE_SetInterruptNode)
+    i.XMC_CCU4_SLICE_StartTimer              0x10001880   Section        0  timer.o(i.XMC_CCU4_SLICE_StartTimer)
+    XMC_CCU4_SLICE_StartTimer                0x10001881   Thumb Code     6  timer.o(i.XMC_CCU4_SLICE_StartTimer)
+    i.XMC_GPIO_Init                          0x10001888   Section        0  xmc1_gpio.o(i.XMC_GPIO_Init)
+    i.XMC_GPIO_SetHardwareControl            0x1000192c   Section        0  xmc_gpio.o(i.XMC_GPIO_SetHardwareControl)
+    i.XMC_SCU_CLOCK_Init                     0x10001948   Section        0  xmc1_scu.o(i.XMC_SCU_CLOCK_Init)
+    i.XMC_SCU_CLOCK_ScaleMCLKFrequency       0x10001978   Section        0  xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency)
+    i.XMC_SCU_CLOCK_UngatePeripheralClock    0x10001a04   Section        0  xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock)
+    i.XMC_SCU_CLOCK_lFrequencyDownScaling    0x10001a30   Section        0  xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyDownScaling)
+    XMC_SCU_CLOCK_lFrequencyDownScaling      0x10001a31   Thumb Code    54  xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyDownScaling)
+    i.XMC_SCU_CLOCK_lFrequencyUpScaling      0x10001a74   Section        0  xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyUpScaling)
+    XMC_SCU_CLOCK_lFrequencyUpScaling        0x10001a75   Thumb Code    48  xmc1_scu.o(i.XMC_SCU_CLOCK_lFrequencyUpScaling)
+    i.XMC_SCU_LockProtectedBits              0x10001ab0   Section        0  xmc1_scu.o(i.XMC_SCU_LockProtectedBits)
+    i.XMC_SCU_UnlockProtectedBits            0x10001abc   Section        0  xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits)
+    i.__ARM_common_switch8                   0x10001ad8   Section        0  xmc_ccu4.o(i.__ARM_common_switch8)
+    i.__NVIC_SetPriority                     0x10001af4   Section        0  interrupt.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x10001af5   Thumb Code   110  interrupt.o(i.__NVIC_SetPriority)
+    i.buttonPress                            0x10001b6c   Section        0  main.o(i.buttonPress)
+    i.check                                  0x10001c28   Section        0  main.o(i.check)
+    i.clear                                  0x10001cf0   Section        0  main.o(i.clear)
+    i.cooldown                               0x10001d1c   Section        0  main.o(i.cooldown)
+    i.debounce                               0x10001d9c   Section        0  main.o(i.debounce)
+    i.main                                   0x10001db8   Section        0  main.o(i.main)
+    i.reset                                  0x10001e40   Section        0  main.o(i.reset)
+    .constdata                               0x10001e6c   Section       12  clock_xmc1_conf.o(.constdata)
+    .constdata                               0x10001e78   Section      112  digital_io_conf.o(.constdata)
+    .constdata                               0x10001ee8   Section       12  interrupt_conf.o(.constdata)
+    .ARM.__at_0x20000000                     0x20000000   Section      384  startup_xmc1100.o(.ARM.__at_0x20000000)
+    .data                                    0x20000180   Section       60  main.o(.data)
+    .data                                    0x200001bc   Section        1  clock_xmc1_conf.o(.data)
+    .data                                    0x200001c0   Section       16  global_ccu4_conf.o(.data)
+    .data                                    0x200001d0   Section      192  timer_conf.o(.data)
+    .data                                    0x20000290   Section        8  system_xmc1100.o(.data)
+    IDIV                                     0x20000290   Data           4  system_xmc1100.o(.data)
+    FDIV                                     0x20000294   Data           4  system_xmc1100.o(.data)
+    .bss                                     0x20000298   Section       16  main.o(.bss)
+    .bss                                     0x200002a8   Section       96  libspace.o(.bss)
+    HEAP                                     0x20000308   Section      512  startup_xmc1100.o(HEAP)
+    Heap_Mem                                 0x20000308   Data         512  startup_xmc1100.o(HEAP)
+    STACK                                    0x20000508   Section     1024  startup_xmc1100.o(STACK)
+    Stack_Mem                                0x20000508   Data        1024  startup_xmc1100.o(STACK)
+    __initial_sp                             0x20000908   Data           0  startup_xmc1100.o(STACK)
+    .ARM.__AT_0x20003FFC                     0x20003ffc   Section        4  system_xmc1100.o(.ARM.__AT_0x20003FFC)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __Vectors_Size                           0x00000018   Number         0  startup_xmc1100.o ABSOLUTE
+    __Vectors                                0x10001000   Data           4  startup_xmc1100.o(RESET)
+    __Vectors_End                            0x10001018   Data           0  startup_xmc1100.o(RESET)
+    __main                                   0x10001019   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x10001021   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x10001021   Thumb Code    52  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x10001021   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x10001031   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x1000105d   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x10001079   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x10001095   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_1                       0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x10001097   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_shutdown                        0x10001099   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x1000109b   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x1000109d   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x1000109d   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x1000109d   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x100010a3   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x100010a3   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x100010a7   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x100010a7   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x100010af   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x100010b1   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x100010b1   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x100010b5   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x100010bd   Thumb Code    22  startup_xmc1100.o(.text)
+    ERU0_0_IRQHandler                        0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    ERU0_1_IRQHandler                        0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    ERU0_2_IRQHandler                        0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    ERU0_3_IRQHandler                        0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    HardFault_Handler                        0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    PendSV_Handler                           0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    SCU_0_IRQHandler                         0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    SCU_1_IRQHandler                         0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    SCU_2_IRQHandler                         0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    SVC_Handler                              0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    SysTick_Handler                          0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_0_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_1_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_2_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_3_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_4_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    USIC0_5_IRQHandler                       0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    VADC0_C0_0_IRQHandler                    0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    VADC0_C0_1_IRQHandler                    0x100010d3   Thumb Code     0  startup_xmc1100.o(.text)
+    __user_initial_stackheap                 0x100010d5   Thumb Code    10  startup_xmc1100.o(.text)
+    __aeabi_uidiv                            0x10001101   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x10001101   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x10001115   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x10001115   Thumb Code   326  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x1000125b   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x1000125d   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x1000125f   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x10001261   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x1000129f   Thumb Code    16  exit.o(.text)
+    __user_libspace                          0x100012b1   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x100012b1   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x100012b1   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x100012b9   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x100012c5   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x100012c5   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x100012c7   Thumb Code     0  indicate_semi.o(.text)
+    CCU40_0_IRQHandler                       0x100012c9   Thumb Code    38  main.o(i.CCU40_0_IRQHandler)
+    CCU40_1_IRQHandler                       0x100012fd   Thumb Code    96  main.o(i.CCU40_1_IRQHandler)
+    CCU40_2_IRQHandler                       0x10001369   Thumb Code    14  main.o(i.CCU40_2_IRQHandler)
+    CCU40_3_IRQHandler                       0x1000137d   Thumb Code    16  main.o(i.CCU40_3_IRQHandler)
+    CLOCK_XMC1_Init                          0x10001391   Thumb Code    40  clock_xmc1.o(i.CLOCK_XMC1_Init)
+    DAVE_Init                                0x100013b9   Thumb Code   196  dave.o(i.DAVE_Init)
+    DIGITAL_IO_Init                          0x100014cf   Thumb Code    28  digital_io.o(i.DIGITAL_IO_Init)
+    GLOBAL_CCU4_Init                         0x1000151d   Thumb Code    40  global_ccu4.o(i.GLOBAL_CCU4_Init)
+    INTERRUPT_Init                           0x10001545   Thumb Code    52  interrupt.o(i.INTERRUPT_Init)
+    SystemCoreClockSetup                     0x1000157d   Thumb Code    18  clock_xmc1_conf.o(i.SystemCoreClockSetup)
+    SystemCoreClockUpdate                    0x10001595   Thumb Code    70  system_xmc1100.o(i.SystemCoreClockUpdate)
+    SystemCoreSetup                          0x100015f5   Thumb Code     2  cpu_ctrl_xmc1_conf.o(i.SystemCoreSetup)
+    SystemInit                               0x100015f7   Thumb Code    12  system_xmc1100.o(i.SystemInit)
+    TIMER_CCU4_lInit                         0x10001603   Thumb Code   116  timer.o(i.TIMER_CCU4_lInit)
+    TIMER_CCU4_lShadowTransfer               0x10001677   Thumb Code    28  timer.o(i.TIMER_CCU4_lShadowTransfer)
+    TIMER_Clear                              0x10001693   Thumb Code    36  timer.o(i.TIMER_Clear)
+    TIMER_ClearEvent                         0x100016b7   Thumb Code    34  timer.o(i.TIMER_ClearEvent)
+    TIMER_GetInterruptStatus                 0x100016d9   Thumb Code    44  timer.o(i.TIMER_GetInterruptStatus)
+    TIMER_GetTimerStatus                     0x10001705   Thumb Code    34  timer.o(i.TIMER_GetTimerStatus)
+    TIMER_Init                               0x10001727   Thumb Code    34  timer.o(i.TIMER_Init)
+    TIMER_Start                              0x10001749   Thumb Code    36  timer.o(i.TIMER_Start)
+    TIMER_Stop                               0x1000176d   Thumb Code    50  timer.o(i.TIMER_Stop)
+    XMC_CCU4_EnableModule                    0x100017a1   Thumb Code    30  xmc_ccu4.o(i.XMC_CCU4_EnableModule)
+    XMC_CCU4_Init                            0x100017c5   Thumb Code    46  xmc_ccu4.o(i.XMC_CCU4_Init)
+    XMC_CCU4_SLICE_CompareInit               0x100017f9   Thumb Code    48  xmc_ccu4.o(i.XMC_CCU4_SLICE_CompareInit)
+    XMC_CCU4_SLICE_SetInterruptNode          0x10001829   Thumb Code    88  xmc_ccu4.o(i.XMC_CCU4_SLICE_SetInterruptNode)
+    XMC_GPIO_Init                            0x10001889   Thumb Code   158  xmc1_gpio.o(i.XMC_GPIO_Init)
+    XMC_GPIO_SetHardwareControl              0x1000192d   Thumb Code    28  xmc_gpio.o(i.XMC_GPIO_SetHardwareControl)
+    XMC_SCU_CLOCK_Init                       0x10001949   Thumb Code    44  xmc1_scu.o(i.XMC_SCU_CLOCK_Init)
+    XMC_SCU_CLOCK_ScaleMCLKFrequency         0x10001979   Thumb Code   124  xmc1_scu.o(i.XMC_SCU_CLOCK_ScaleMCLKFrequency)
+    XMC_SCU_CLOCK_UngatePeripheralClock      0x10001a05   Thumb Code    40  xmc1_scu.o(i.XMC_SCU_CLOCK_UngatePeripheralClock)
+    XMC_SCU_LockProtectedBits                0x10001ab1   Thumb Code     8  xmc1_scu.o(i.XMC_SCU_LockProtectedBits)
+    XMC_SCU_UnlockProtectedBits              0x10001abd   Thumb Code    22  xmc1_scu.o(i.XMC_SCU_UnlockProtectedBits)
+    __ARM_common_switch8                     0x10001ad9   Thumb Code    28  xmc_ccu4.o(i.__ARM_common_switch8)
+    buttonPress                              0x10001b6d   Thumb Code   142  main.o(i.buttonPress)
+    check                                    0x10001c29   Thumb Code   158  main.o(i.check)
+    clear                                    0x10001cf1   Thumb Code    32  main.o(i.clear)
+    cooldown                                 0x10001d1d   Thumb Code   106  main.o(i.cooldown)
+    debounce                                 0x10001d9d   Thumb Code    22  main.o(i.debounce)
+    main                                     0x10001db9   Thumb Code   108  main.o(i.main)
+    reset                                    0x10001e41   Thumb Code    34  main.o(i.reset)
+    DIGITAL_IO_0                             0x10001e78   Data          16  digital_io_conf.o(.constdata)
+    DIGITAL_IO_1                             0x10001e88   Data          16  digital_io_conf.o(.constdata)
+    DIGITAL_IO_2                             0x10001e98   Data          16  digital_io_conf.o(.constdata)
+    DIGITAL_IO_3                             0x10001ea8   Data          16  digital_io_conf.o(.constdata)
+    LOCK                                     0x10001eb8   Data          16  digital_io_conf.o(.constdata)
+    ERROR                                    0x10001ec8   Data          16  digital_io_conf.o(.constdata)
+    RESET                                    0x10001ed8   Data          16  digital_io_conf.o(.constdata)
+    DEBOUNCE_INTERRUPT                       0x10001ee8   Data           3  interrupt_conf.o(.constdata)
+    INPUT_INTERRUPT                          0x10001eeb   Data           3  interrupt_conf.o(.constdata)
+    ERROR_INTERRUPT                          0x10001eee   Data           3  interrupt_conf.o(.constdata)
+    COOLDOWN_INTERRUPT                       0x10001ef1   Data           3  interrupt_conf.o(.constdata)
+    Region$$Table$$Base                      0x10001ef4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x10001f14   Number         0  anon$$obj.o(Region$$Table)
+    comb                                     0x20000180   Data          16  main.o(.data)
+    inputcounter                             0x20000190   Data           4  main.o(.data)
+    button1                                  0x20000194   Data           4  main.o(.data)
+    button2                                  0x20000198   Data           4  main.o(.data)
+    button3                                  0x2000019c   Data           4  main.o(.data)
+    button4                                  0x200001a0   Data           4  main.o(.data)
+    buttonreset                              0x200001a4   Data           4  main.o(.data)
+    resetflag                                0x200001a8   Data           4  main.o(.data)
+    lock                                     0x200001ac   Data           4  main.o(.data)
+    error                                    0x200001b0   Data           4  main.o(.data)
+    cooldowncounter                          0x200001b4   Data           4  main.o(.data)
+    errorcounter                             0x200001b8   Data           4  main.o(.data)
+    CLOCK_XMC1_0                             0x200001bc   Data           1  clock_xmc1_conf.o(.data)
+    GLOBAL_CCU4_0                            0x200001c0   Data          16  global_ccu4_conf.o(.data)
+    DEBOUNCE_config                          0x200001d0   Data           8  timer_conf.o(.data)
+    DEBOUNCE                                 0x200001d8   Data          40  timer_conf.o(.data)
+    INPUT_config                             0x20000200   Data           8  timer_conf.o(.data)
+    INPUT                                    0x20000208   Data          40  timer_conf.o(.data)
+    ERROR_TIMER_config                       0x20000230   Data           8  timer_conf.o(.data)
+    ERROR_TIMER                              0x20000238   Data          40  timer_conf.o(.data)
+    COOLDOWN_config                          0x20000260   Data           8  timer_conf.o(.data)
+    COOLDOWN                                 0x20000268   Data          40  timer_conf.o(.data)
+    input                                    0x20000298   Data          16  main.o(.bss)
+    __libspace_start                         0x200002a8   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000308   Data           0  libspace.o(.bss)
+    SystemCoreClock                          0x20003ffc   Data           4  system_xmc1100.o(.ARM.__AT_0x20003FFC)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x100010bd
+
+  Load Region LR_1 (Base: 0x10001000, Size: 0x000011ac, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x10001000, Size: 0x00000f14, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10001000   0x00000018   Data   RO         2499    RESET               startup_xmc1100.o
+    0x10001018   0x00000008   Code   RO         2566  * !!!main             c_p.l(__main.o)
+    0x10001020   0x0000003c   Code   RO         2739    !!!scatter          c_p.l(__scatter.o)
+    0x1000105c   0x0000001a   Code   RO         2741    !!handler_copy      c_p.l(__scatter_copy.o)
+    0x10001076   0x00000002   PAD
+    0x10001078   0x0000001c   Code   RO         2743    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x10001094   0x00000002   Code   RO         2608    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x10001096   0x00000000   Code   RO         2622    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2624    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2627    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2629    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2631    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2634    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2636    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2638    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2640    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2642    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2644    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2646    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2648    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2650    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2652    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2654    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2658    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2660    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2662    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x10001096   0x00000000   Code   RO         2664    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x10001096   0x00000002   Code   RO         2665    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x10001098   0x00000002   Code   RO         2696    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x1000109a   0x00000000   Code   RO         2722    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000000   Code   RO         2724    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000000   Code   RO         2727    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000000   Code   RO         2730    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000000   Code   RO         2732    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000000   Code   RO         2735    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x1000109a   0x00000002   Code   RO         2736    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
+    0x1000109c   0x00000000   Code   RO         2568    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x1000109c   0x00000000   Code   RO         2578    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x1000109c   0x00000006   Code   RO         2590    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x100010a2   0x00000000   Code   RO         2580    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x100010a2   0x00000004   Code   RO         2581    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x100010a6   0x00000000   Code   RO         2583    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x100010a6   0x00000008   Code   RO         2584    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x100010ae   0x00000002   Code   RO         2613    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x100010b0   0x00000000   Code   RO         2669    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x100010b0   0x00000004   Code   RO         2670    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x100010b4   0x00000006   Code   RO         2671    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x100010ba   0x00000002   PAD
+    0x100010bc   0x00000044   Code   RO         2500  * .text               startup_xmc1100.o
+    0x10001100   0x0000015a   Code   RO         2560    .text               c_p.l(aeabi_sdiv.o)
+    0x1000125a   0x00000006   Code   RO         2564    .text               c_p.l(heapauxi.o)
+    0x10001260   0x0000003e   Code   RO         2594    .text               c_p.l(sys_stackheap_outer.o)
+    0x1000129e   0x00000010   Code   RO         2597    .text               c_p.l(exit.o)
+    0x100012ae   0x00000002   PAD
+    0x100012b0   0x00000008   Code   RO         2609    .text               c_p.l(libspace.o)
+    0x100012b8   0x0000000c   Code   RO         2666    .text               c_p.l(sys_exit.o)
+    0x100012c4   0x00000002   Code   RO         2685    .text               c_p.l(use_no_semi.o)
+    0x100012c6   0x00000000   Code   RO         2687    .text               c_p.l(indicate_semi.o)
+    0x100012c6   0x00000002   PAD
+    0x100012c8   0x00000034   Code   RO            3    i.CCU40_0_IRQHandler  main.o
+    0x100012fc   0x0000006c   Code   RO            4    i.CCU40_1_IRQHandler  main.o
+    0x10001368   0x00000014   Code   RO            5    i.CCU40_2_IRQHandler  main.o
+    0x1000137c   0x00000014   Code   RO            6    i.CCU40_3_IRQHandler  main.o
+    0x10001390   0x00000028   Code   RO          232    i.CLOCK_XMC1_Init   clock_xmc1.o
+    0x100013b8   0x00000104   Code   RO          362    i.DAVE_Init         dave.o
+    0x100014bc   0x00000012   Code   RO            7    i.DIGITAL_IO_GetInput  main.o
+    0x100014ce   0x0000001c   Code   RO          452    i.DIGITAL_IO_Init   digital_io.o
+    0x100014ea   0x0000000e   Code   RO            8    i.DIGITAL_IO_SetOutputHigh  main.o
+    0x100014f8   0x00000010   Code   RO            9    i.DIGITAL_IO_SetOutputLow  main.o
+    0x10001508   0x00000014   Code   RO           10    i.DIGITAL_IO_ToggleOutput  main.o
+    0x1000151c   0x00000028   Code   RO          508    i.GLOBAL_CCU4_Init  global_ccu4.o
+    0x10001544   0x00000038   Code   RO          570    i.INTERRUPT_Init    interrupt.o
+    0x1000157c   0x00000018   Code   RO          273    i.SystemCoreClockSetup  clock_xmc1_conf.o
+    0x10001594   0x00000060   Code   RO         2510    i.SystemCoreClockUpdate  system_xmc1100.o
+    0x100015f4   0x00000002   Code   RO          336    i.SystemCoreSetup   cpu_ctrl_xmc1_conf.o
+    0x100015f6   0x0000000c   Code   RO         2512    i.SystemInit        system_xmc1100.o
+    0x10001602   0x00000074   Code   RO          636    i.TIMER_CCU4_lInit  timer.o
+    0x10001676   0x0000001c   Code   RO          637    i.TIMER_CCU4_lShadowTransfer  timer.o
+    0x10001692   0x00000024   Code   RO          638    i.TIMER_Clear       timer.o
+    0x100016b6   0x00000022   Code   RO          639    i.TIMER_ClearEvent  timer.o
+    0x100016d8   0x0000002c   Code   RO          641    i.TIMER_GetInterruptStatus  timer.o
+    0x10001704   0x00000022   Code   RO          643    i.TIMER_GetTimerStatus  timer.o
+    0x10001726   0x00000022   Code   RO          644    i.TIMER_Init        timer.o
+    0x10001748   0x00000024   Code   RO          646    i.TIMER_Start       timer.o
+    0x1000176c   0x00000032   Code   RO          647    i.TIMER_Stop        timer.o
+    0x1000179e   0x00000002   PAD
+    0x100017a0   0x00000024   Code   RO         1273    i.XMC_CCU4_EnableModule  xmc_ccu4.o
+    0x100017c4   0x0000002e   Code   RO         1274    i.XMC_CCU4_Init     xmc_ccu4.o
+    0x100017f2   0x00000006   Code   RO          648    i.XMC_CCU4_SLICE_ClearTimer  timer.o
+    0x100017f8   0x00000030   Code   RO         1278    i.XMC_CCU4_SLICE_CompareInit  xmc_ccu4.o
+    0x10001828   0x00000058   Code   RO         1291    i.XMC_CCU4_SLICE_SetInterruptNode  xmc_ccu4.o
+    0x10001880   0x00000006   Code   RO          649    i.XMC_CCU4_SLICE_StartTimer  timer.o
+    0x10001886   0x00000002   PAD
+    0x10001888   0x000000a4   Code   RO          909    i.XMC_GPIO_Init     xmc1_gpio.o
+    0x1000192c   0x0000001c   Code   RO         1657    i.XMC_GPIO_SetHardwareControl  xmc_gpio.o
+    0x10001948   0x00000030   Code   RO         1013    i.XMC_SCU_CLOCK_Init  xmc1_scu.o
+    0x10001978   0x0000008c   Code   RO         1015    i.XMC_SCU_CLOCK_ScaleMCLKFrequency  xmc1_scu.o
+    0x10001a04   0x0000002c   Code   RO         1019    i.XMC_SCU_CLOCK_UngatePeripheralClock  xmc1_scu.o
+    0x10001a30   0x00000044   Code   RO         1020    i.XMC_SCU_CLOCK_lFrequencyDownScaling  xmc1_scu.o
+    0x10001a74   0x0000003c   Code   RO         1021    i.XMC_SCU_CLOCK_lFrequencyUpScaling  xmc1_scu.o
+    0x10001ab0   0x0000000c   Code   RO         1033    i.XMC_SCU_LockProtectedBits  xmc1_scu.o
+    0x10001abc   0x0000001c   Code   RO         1041    i.XMC_SCU_UnlockProtectedBits  xmc1_scu.o
+    0x10001ad8   0x0000001c   Code   RO         1461    i.__ARM_common_switch8  xmc_ccu4.o
+    0x10001af4   0x00000078   Code   RO          571    i.__NVIC_SetPriority  interrupt.o
+    0x10001b6c   0x000000bc   Code   RO           11    i.buttonPress       main.o
+    0x10001c28   0x000000c8   Code   RO           12    i.check             main.o
+    0x10001cf0   0x0000002c   Code   RO           13    i.clear             main.o
+    0x10001d1c   0x00000080   Code   RO           14    i.cooldown          main.o
+    0x10001d9c   0x0000001c   Code   RO           15    i.debounce          main.o
+    0x10001db8   0x00000088   Code   RO           16    i.main              main.o
+    0x10001e40   0x0000002c   Code   RO           17    i.reset             main.o
+    0x10001e6c   0x0000000c   Data   RO          274    .constdata          clock_xmc1_conf.o
+    0x10001e78   0x00000070   Data   RO          487    .constdata          digital_io_conf.o
+    0x10001ee8   0x0000000c   Data   RO          613    .constdata          interrupt_conf.o
+    0x10001ef4   0x00000020   Data   RO         2737    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000298, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000180   Code   RW         2501    .ARM.__at_0x20000000  startup_xmc1100.o
+    0x20000180   0x0000003c   Data   RW           19    .data               main.o
+    0x200001bc   0x00000001   Data   RW          275    .data               clock_xmc1_conf.o
+    0x200001bd   0x00000003   PAD
+    0x200001c0   0x00000010   Data   RW          546    .data               global_ccu4_conf.o
+    0x200001d0   0x000000c0   Data   RW          754    .data               timer_conf.o
+    0x20000290   0x00000008   Data   RW         2514    .data               system_xmc1100.o
+
+
+    Execution Region ER_ZI (Base: 0x20000298, Size: 0x00000670, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000298   0x00000010   Zero   RW           18    .bss                main.o
+    0x200002a8   0x00000060   Zero   RW         2610    .bss                c_p.l(libspace.o)
+    0x20000308   0x00000200   Zero   RW         2498    HEAP                startup_xmc1100.o
+    0x20000508   0x00000400   Zero   RW         2497    STACK               startup_xmc1100.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x20003FFC (Base: 0x20003ffc, Size: 0x00000000, Max: 0x00000004, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x20003FFC (Base: 0x20003ffc, Size: 0x00000004, Max: 0x00000004, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20003ffc   0x00000004   Zero   RW         2513    .ARM.__AT_0x20003FFC  system_xmc1100.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        40          0          0          0          0       2098   clock_xmc1.o
+        24          6         12          1          0       1438   clock_xmc1_conf.o
+         2          0          0          0          0        570   cpu_ctrl_xmc1_conf.o
+       260         64          0          0          0       5844   dave.o
+        28          0          0          0          0       1678   digital_io.o
+         0          0        112          0          0       1019   digital_io_conf.o
+        40          0          0          0          0      13519   global_ccu4.o
+         0          0          0         16          0       1296   global_ccu4_conf.o
+       176         14          0          0          0       9417   interrupt.o
+         0          0         12          0          0       1988   interrupt_conf.o
+      1036        208          0         60         16     141351   main.o
+       452        226         24          0       1536        912   startup_xmc1100.o
+       108         26          0          8          4       1359   system_xmc1100.o
+       424          0          0          0          0      22183   timer.o
+         0          0          0        192          0       1658   timer_conf.o
+       164          6          0          0          0       1148   xmc1_gpio.o
+       400         60          0          0          0       5316   xmc1_scu.o
+       246         18          0          0          0      16739   xmc_ccu4.o
+        28          0          0          0          0       1066   xmc_gpio.o
+
+    ----------------------------------------------------------------------
+      3432        628        192        280       1556     230599   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         4          0          0          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        60          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+       346          0          0          0          0         92   aeabi_sdiv.o
+        16          0          0          0          0         68   exit.o
+         6          0          0          0          0        136   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         60   sys_exit.o
+        62          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       620         16          0          0         96        640   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       612         16          0          0         96        640   c_p.l
+
+    ----------------------------------------------------------------------
+       620         16          0          0         96        640   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      4052        644        192        280       1652     229027   Grand Totals
+      4052        644        192        280       1652     229027   ELF Image Totals
+      4052        644        192        280          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 4244 (   4.14kB)
+    Total RW  Size (RW Data + ZI Data)              1932 (   1.89kB)
+    Total ROM Size (Code + RO Data + RW Data)       4524 (   4.42kB)
+
+==============================================================================
+
